@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f2f6ff;
+  color: #222;
+}
+
+.app {
+  width: 95%;
+  max-width: 700px;
+  background: #fff;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.heading {
+  margin: 0;
+  color: #3b82f6;
+  font-size: 28px;
+}
+
+.tagline {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.btn {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.todo-section {
+  margin-top: 15px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.todo-item.done .todo-text {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.todo-text {
+  flex: 1;
+  margin-left: 10px;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+.todo-item:hover {
+  transform: scale(1.02);
+  background: #f3f4f6;
+}
+
+.edit-input {
+  flex: 1;
+  margin-left: 10px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.btn.small {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.btn.edit {
+  background: #10b981;
+}
+
+.btn.delete {
+  background: #ef4444;
+}
+
+.no-task {
+  text-align: center;
+  color: #6b7280;
+}
+
+/* ================= Responsive Design ================= */
+@media (max-width: 768px) {
+  .app {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .todo-form {
+    flex-direction: column;
+  }
+
+  .input-box {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .todo-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 22px;
+  }
+
+  .app {
+    width: 95%;
+    margin: 30px auto;
+  }
+}
