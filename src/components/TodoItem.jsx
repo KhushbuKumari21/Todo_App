@@ -11,7 +11,7 @@ const TodoItem = ({ todo, onDelete, onToggle, onEdit }) => {
   };
 
   return (
-    <li className={`todo-item ${todo.completed ? "done" : ""}`}>
+    <li className={`todo-item ${todo.completed ? "Done" : ""}`}>
       <input
         type="checkbox"
         checked={todo.completed}
