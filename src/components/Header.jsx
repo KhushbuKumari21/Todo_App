@@ -5,7 +5,7 @@ const Header = () => {
     <header className="header">
       <h1 className="heading">My To-Do List</h1>
       <p className="tagline">
-        Manage your tasks <Properly></Properly> — Add, Complete, Edit, and Delete with ease!
+        Manage your tasks properly — Add, Complete, Edit, and Delete with ease!
       </p>
     </header>
   );
